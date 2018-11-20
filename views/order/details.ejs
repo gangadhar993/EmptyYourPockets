@@ -1,0 +1,19 @@
+<p> Orders Details </p>
+
+<br />
+<br />
+
+ID:
+<%=  order._orderid %>
+<br> Order Date:
+<%= order.orderDate %>
+<br /> Product ID:
+<%= order._productid %>
+<br /> Customer ID:
+<%= order._customerid %>
+<br />
+<br />
+<br />
+<form method="get" action="/order">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>

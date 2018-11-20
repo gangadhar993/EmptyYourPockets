@@ -1,0 +1,26 @@
+[
+  {
+    "_customerid": 1,
+    "name": "Dave",
+    "premium": 1,
+    "wallet": 4.62
+  },
+  {
+    "_customerid": 2,
+    "name": "Prady",
+    "premium": 0,
+    "wallet": 7.44
+  },
+  {
+    "_customerid": 3,
+    "name": "Saroj",
+    "premium": 1,
+    "wallet": 370.42
+  },
+  {
+    "_customerid": 4,
+    "name": "Gangadhar",
+    "premium": 0,
+    "wallet": 5.32
+  }
+]

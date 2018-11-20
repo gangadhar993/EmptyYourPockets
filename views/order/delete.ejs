@@ -1,0 +1,27 @@
+<br />
+<br />
+<h2>Confirm deletion of puppy</h2>
+ID:
+<%=  order._orderid %>
+<br> Order Date:
+<%= order.orderDate %>
+<br /> Product ID:
+<%= order._productid %>
+<br /> Customer ID:
+<%= order._customerid %>
+<br />
+<br />
+<br />
+<form method="get" action="/order">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>
+
+
+<form method="get" action="/order">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>
+
+<br />
+<form method="POST" action="/order/delete/<%= order._orderid %>">
+    <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+</form>

@@ -1,0 +1,30 @@
+[
+    {
+      "_orderid": 1,
+      "orderDate":"12/10/1990",
+      "_productid": 1,
+      "_customerid": 1,
+      "totalAmount": 600
+    },
+    {
+        "_orderid": 2,
+        "orderDate":"12/10/1990",
+        "_productid": 2,
+        "_customerid": 2,
+        "totalAmount": 100
+      },
+      {
+        "_orderid": 3,
+        "orderDate":"12/10/1990",
+        "_productid": 3,
+        "_customerid": 3,
+        "totalAmount": 400
+      },
+      {
+          "_orderid": 4,
+        "orderDate":"12/10/1990",
+        "_productid": 4,
+        "_customerid": 4,
+        "totalAmount": 300
+      }
+]

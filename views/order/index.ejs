@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <p>There are
+        <%= orders.query.length %> Orders.
+      </p>
+
+      <% for (var i = 0; i <= orders.query.length-1; i++) {   
+              order = orders.query[i];   %>
+      <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="text-muted pull-right"></div>
+        <div class="panel-body">
+          ID:
+          <%=  order._orderid %>
+          <br> Order Date:
+          <%= order.orderDate %>
+          <br /> Product ID:
+          <%= order._productid %>
+          <br /> Customer ID:
+          <%= order._customerid%>
+          <br />
+          <br />
+          <br />
+          <br />
+          <a href="/order/delete/<%= order._orderid  %>" class="btn btn-danger"> Delete </a>
+          <a href="/order/details/<%= order._orderid %>" class="btn btn-info"> Details </a>
+          <a href="/order/edit/<%= order._orderid %>" class="btn btn-warning"> Edit </a>
+        </div>
+      </div>
+      <% } %>
+
+    </div>
+  </div>
+</div>
