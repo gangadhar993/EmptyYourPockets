@@ -41,7 +41,7 @@ api.get('/create', (req, res) => {
   LOG.info(`Handling GET /create${req}`)
   const item = new Model()
   LOG.debug(JSON.stringify(item))
-  res.render('/create',
+  res.render('product/create',
     {
       title: 'Create product',
       layout: 'layout.ejs',
