@@ -1,17 +1,16 @@
 
 
-<p> Edit Orders</p>
+<p> Edit Order</p>
 <br/>
 <br/>
 <div class="container-fluid">
   <div class=row>
     <div class="col col-md-12">
-      <h2>Edit puppy </h2>
       <div class="content">
         <form method="POST" action="/order/save/<%= order._orderid %>">
           <div class="form-group" id=frm>
-            <label for="_id">ID</label>
-            <input type="number" class="form-control" id="_id" name="_id" value="<%= order._orderid %>" required disabled>
+            <label for="_orderid">ID</label>
+            <input type="number" class="form-control" id="_orderid" name="_orderid" value="<%= order._orderid %>" required disabled>
           </div>
             <!-- COMMON TO EDIT AND CREATE -->
             <%include partial_edit.ejs %>
@@ -19,7 +18,7 @@
         </form>
         <br/>
 
-        <form method="get" action="/puppy">
+        <form method="get" action="/order">
           <input type="submit" value="Return to list" class="btn btn-caution" />
         </form>
       </div>

@@ -1,1 +1,23 @@
-<h2>edit orderLine</h2>
+<% include header %>
+
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <h2>Edit orderLine </h2>
+      <div class="content">
+        <form method="POST" action="/orderLine/save/<%= orderLine._id %>">
+          <div class="form-group" id=frm>
+            <label for="_id">ID</label> 
+        <br/>
+
+        <form method="get" action="/orderLine">
+          <input type="submit" value="Return to list" class="btn btn-caution" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include footer %>

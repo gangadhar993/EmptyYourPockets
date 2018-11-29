@@ -1,1 +1,25 @@
-<h2>delete orderLine</h2>
+
+<br/>
+<h2>Confirm deletion of orderLine</h2>
+<br/>
+<br/> ID:
+<%=  orderLine._id %>
+  <br> orderLine ID:
+  <%=orderLine.lineNumber%>
+    <br/> orderLine ;ine number:
+    <%=orderLine.productID%>
+      <br/> product id :
+      <%=orderLine.quantity%>
+      <br/> orderLine quantity :
+        <br/>
+            <br/>
+            <br/>
+
+            <form method="get" action="/orderLine">
+              <input type="submit" value="Return to list" class="btn btn-caution" />
+            </form>
+
+            <br/>
+            <form method="POST" action="/orderLine/delete/<%= orderLine._id %>">
+              <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+            </form>
